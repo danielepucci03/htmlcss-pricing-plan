@@ -53,7 +53,7 @@ button{
 }
 
 .card{
-
+    position: relative;
     margin: 2rem;
     box-shadow: rgba(128, 128, 128, 0.569) 0px 10px 1pc;;
     background-color: white;
@@ -100,19 +100,21 @@ button{
             top: -0.5rem;
             margin-left: 0.5rem;
             padding: 0.5rem;
-            background-color: rgba(128, 128, 128, 0.542);
+            background-color: rgba(128, 128, 128, 0.328);
             border-radius: 6px;
         }
     }
 
     .medium_card{
-        text-align: center;
-        position: relative;
+
         background-color: rgb(103, 22, 254);
-        padding: 1rem;
+        padding: 1.5rem;
+        font-size: 1rem;
         color: white;
-        margin: 1rem;
-        border-radius: 1rem;
+        justify-self: center;
+        display: flex;
+        border-radius: 1.3rem;
+        
     }
 
 
@@ -175,12 +177,35 @@ button{
     }
 
     .medium_card{
-        text-align: center;
-        position: relative;
+        
+        font-size: 1rem;
         background-color: white;
-        padding: 1rem;
+        padding: 1.5rem;
         color: rgb(103, 22, 254);
-        margin: 1rem;
-        border-radius: 1rem;
+        justify-self: center;
+        display: flex;
+        border-radius: 1.3rem;
+        
+    }
+}
+
+.list_unstile{
+    list-style: none;
+}
+
+.write_second{
+    margin: 1rem;
+
+    li{
+        padding: 1rem;
+        color: white;
+    }
+}
+
+.write{
+    margin: 1rem;
+
+    li{
+        padding: 1rem;
     }
 }

@@ -4,23 +4,36 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: sans-serif;
-    width: 900px;
-}
+
 
 header{
     position: relative;
     margin: 2rem;
 
     p{
+        
         margin-top: 0.5rem;
         color: gray;
     }
 }
 
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+.col{
+    flex-basis: calc(100% /3 - (15px*2) / 3);
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .monthly{
     position: absolute;
@@ -46,8 +59,127 @@ header{
     top: 1rem;
 }
 
-.container{
-    max-width: 900px;
-    margin: 0;
+.card{
+
+    margin: 2rem;
+    box-shadow: rgba(128, 128, 128, 0.569) 0px 10px 1pc;;
+    background-color: white;
+    flex-shrink: 0;
+    max-width: 290px;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 15px;
+
+    h2{
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    p{
+        padding-left: 1.5rem;
+        color: gray;
+    }
+
+    h3{
+        position: relative;
+        padding: 2rem;
+        text-align: center;
+        font-size: 30px;
+
+        p{
+            position: absolute;
+            right: 4rem;
+            top: 3rem;
+            font-size: 14px;
+            color: gray;
+
+            .months{
+                position: relative;
+                right: 0.5rem;
+            }
+        }
+    }
+
+    .under{
+        display: flex;
+        justify-content: center;
+        
+        .mini_card{
+            position: relative;
+            top: -0.5rem;
+            margin-left: 0.5rem;
+            padding: 0.5rem;
+            background-color: rgba(128, 128, 128, 0.542);
+            border-radius: 6px;
+        }
+    }
+
+    .medium_card{
+        text-align: center;
+        position: relative;
+        background-color: royalblue;
+        padding: 1rem;
+        color: white;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
+
+
 }
 
+
+.card_second{
+    margin: 2rem;
+    box-shadow: rgba(128, 128, 128, 0.569) 0px 10px 1pc;
+    background-color: royalblue;
+    flex-shrink: 0;
+    max-width: 290px;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 15px;
+
+    h2{
+        color: white;
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    p{
+        padding-left: 1.5rem;
+        color: white;
+    }
+
+    h3{
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .under_second{
+        color: white;
+        display: flex;
+        justify-content: center;
+        
+        .mini_card{
+            color: black;
+            position: relative;
+            top: -0.5rem;
+            margin-left: 0.5rem;
+            padding: 0.5rem;
+            background-color: rgba(255, 255, 255, 0.921);
+            border-radius: 6px;
+        }
+    }
+
+    .medium_card{
+        text-align: center;
+        position: relative;
+        background-color: white;
+        padding: 1rem;
+        color: royalblue;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+}
